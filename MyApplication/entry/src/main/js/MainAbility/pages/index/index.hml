@@ -1,0 +1,42 @@
+<div style="flex-direction: column;">
+    <div>
+        <text>
+            新书推荐
+        </text>
+    </div>
+    <swiper autoplay="true">
+        <div><image src="/image/1.jpg" /></div>
+        <div><image src="/image/2.jpg" /></div>
+        <div><image src="/image/3.jpg" /></div>
+    </swiper>
+    <div>
+        <text>
+            热门分类
+        </text>
+    </div>
+    <div>
+        <list>
+            <list-item>
+                <div>
+                <div><text>a</text></div>
+                <div><text>b</text></div>
+                <div><text>c</text></div>
+                </div>
+            </list-item>
+            <list-item>
+                <div>
+                <div><text>d</text></div>
+                <div><text>e</text></div>
+                <div><text>f</text></div>
+                </div>
+            </list-item>
+            <list-item>
+                <div>
+                <div><text>g</text></div>
+                <div><text>h</text></div>
+                <div><text>i</text></div>
+                </div>
+            </list-item>
+        </list>
+    </div>
+</div>
