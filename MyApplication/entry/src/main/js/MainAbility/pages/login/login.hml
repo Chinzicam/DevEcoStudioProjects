@@ -1,15 +1,19 @@
-<div style="flex-direction: column;">
-    <div>
+<div style="flex-direction: column; margin: 50px;">
+    <div class="title">
         <text>
             登录
         </text>
     </div>
-    <div style="flex-direction: column;">
+    <div style=" flex-direction: column;">
         <input type="text" placeholder="手机号码"></input>
         <input type="password" placeholder="密码"></input>
         <button type="capsule">登录</button>
     </div>
-    <div>
+    <div class="forpwd">
+        <text>没有账号去注册</text>
+        <text>忘记密码</text>
+    </div>
+    <div class="question">
         <text>遇见问题</text>
         <text>隐私声明</text>
     </div>

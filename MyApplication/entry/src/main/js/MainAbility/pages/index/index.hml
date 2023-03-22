@@ -1,42 +1,47 @@
-<div style="flex-direction: column;">
-    <div>
+<div style="flex-direction: column; margin-bottom: 180px;">
+    <div class="title">
         <text>
             新书推荐
         </text>
     </div>
     <swiper autoplay="true">
-        <div><image src="/image/1.jpg" /></div>
-        <div><image src="/image/2.jpg" /></div>
-        <div><image src="/image/3.jpg" /></div>
+        <div><image src="{{image_swiper[0].path}}" /></div>
+        <div><image src="{{image_swiper[1].path}}" /></div>
+        <div><image src="{{image_swiper[2].path}}" /></div>
     </swiper>
-    <div>
+    <div class="hot">
         <text>
             热门分类
         </text>
     </div>
-    <div>
-        <list>
-            <list-item>
-                <div>
-                <div><text>a</text></div>
-                <div><text>b</text></div>
-                <div><text>c</text></div>
-                </div>
-            </list-item>
-            <list-item>
-                <div>
-                <div><text>d</text></div>
-                <div><text>e</text></div>
-                <div><text>f</text></div>
-                </div>
-            </list-item>
-            <list-item>
-                <div>
-                <div><text>g</text></div>
-                <div><text>h</text></div>
-                <div><text>i</text></div>
-                </div>
+    <div style="background-color: aquamarine;">
+        <list >
+            <list-item for="{{shop_swiper}}" tid="id"  >
+                    <div class="index_img" for="{{$item}}" tid="id">
+                        <image src="{{$item.img_path}}" />
+                        <text>
+                            {{ $item.name }}
+                        </text>
+                    </div>
             </list-item>
         </list>
+    </div>
+    <div id="tab-Bar">
+        <div class="NavBar">
+            <image src="/image/商店.png" />
+            <text>首页</text>
+        </div>
+        <div class="NavBar">
+            <image src="/image/购物车.png" />
+            <text>分类</text>
+        </div>
+        <div class="NavBar">
+            <image src="/image/待收货.png" />
+            <text>购物车</text>
+        </div>
+        <div class="NavBar">
+            <image src="/image/头像.png" />
+            <text>我的</text>
+        </div>
     </div>
 </div>

@@ -1,0 +1,32 @@
+<div style="flex-direction: column;">
+    <div id="search_box">
+        <search hint="请输入搜索内容" searchbutton="搜索"></search>
+    </div>
+    <div class="main_box">
+        <div class="RootCategory">
+            <list>
+                    <list-item 
+                            onclick="changeRootCate($item.id)"
+                            class="{{ $item.id === InActiveId ? 'in-active' : ''}}"
+                            for="{{ rootCategories }}">
+                        <text>{{$item.cateName}}</text>
+                    </list-item>
+            </list>
+        </div>
+        <div class="main" style="flex-direction: column;">
+            <div class="SubCategory">
+<!--                <list>-->
+<!--                    <list-item for="{{ subCategories }}">-->
+<!--                        <text>{{$item.cateName}}</text>-->
+<!--                    </list-item>-->
+<!--                </list>-->
+                <div class="item" for="{{v in subCategories}}">
+                    <text>{{v.cateName}}</text>
+                </div>
+            </div>
+            <div class="good_box">
+                <text>商品区域</text>
+            </div>
+        </div>
+    </div>
+</div>

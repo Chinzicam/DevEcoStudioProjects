@@ -1,0 +1,50 @@
+#search_box{
+    height: 100px;
+    background-color: orange;
+    padding: 10px;
+}
+#search_box search{
+    background-color: #fff;
+}
+.RootCategory{
+    position: fixed;
+    background-color: orange;
+    width: 130px;
+    margin-top: 110px;
+
+}
+.RootCategory .in-active{
+    background-color: #fff;
+}
+.RootCategory text{
+    margin:10px;
+    padding: 10px;
+    border-style: dashed;
+}
+.main{
+/*    background-color: gold;*/
+    left: 140px;
+    top: 110px;
+    width: 610px;
+    position: fixed;
+}
+.SubCategory{
+    background-color: greenyellow;
+    flex-wrap: wrap;
+    border-style: solid;
+}
+.item{
+    width: 33%;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.SubCategory text{
+    border-radius: 5px;
+    border-style: solid;
+/*    background-color: red;*/
+    margin-top: 10px;
+}
+.good_box{
+/*    background-color: sandybrown;*/
+/*    margin-top: 50px;*/
+}

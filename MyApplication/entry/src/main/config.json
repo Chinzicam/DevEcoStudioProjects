@@ -50,11 +50,12 @@
       {
         "pages": [
           "pages/index/index",
-          "pages/login/login"
+          "pages/login/login",
+          "pages/category/category"
         ],
         "name": ".MainAbility",
         "window": {
-          "designWidth": 720,
+          "designWidth": 750,
           "autoDesignWidth": false
         }
       }
