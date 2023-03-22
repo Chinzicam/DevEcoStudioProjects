@@ -1,0 +1,37 @@
+.title{
+    background-color: #ffffff72;
+    font-style: italic;
+    padding-left: 20px;
+    font-weight: bolder;
+}
+
+.hot{
+    background-color: deepskyblue;
+    font-style: italic;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 40px;
+}
+.indeximg{
+    padding: 10px;
+    margin: 10px;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    background-color: #ffc4c4c4;
+    text-align: center;
+}
+#tab-Bar{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    left: 0%;
+    bottom: 0%;
+    background-color: #ccc;
+}
+.NavBar{
+    width: 23%;
+    margin:1%;
+    text-align: center;
+    flex-direction: column;
+}

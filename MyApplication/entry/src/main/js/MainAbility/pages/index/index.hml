@@ -1,5 +1,5 @@
 <div style="flex-direction: column;">
-    <div>
+    <div class="title">
         <text>
             新书推荐
         </text>
@@ -9,7 +9,7 @@
         <div><image src="/image/2.jpg" /></div>
         <div><image src="/image/3.jpg" /></div>
     </swiper>
-    <div>
+    <div class="hot">
         <text>
             热门分类
         </text>
@@ -18,25 +18,132 @@
         <list>
             <list-item>
                 <div>
-                <div><text>a</text></div>
-                <div><text>b</text></div>
-                <div><text>c</text></div>
+                    <div class="indeximg">
+                        <image src="/image/a.jpg" />
+                        <text>
+                            java
+                        </text>
+                    </div>
+                    <div class="indeximg">
+                        <image src="/image/b.jpg" />
+                        <text>
+                            Vue
+                        </text>
+                    </div>
+                    <div class="indeximg">
+                        <image src="/image/c.jpg" />
+                        <text>
+                            C++
+                        </text>
+                    </div>
                 </div>
             </list-item>
             <list-item>
                 <div>
-                <div><text>d</text></div>
-                <div><text>e</text></div>
-                <div><text>f</text></div>
+                    <div class="indeximg">
+                        <image src="/image/a.jpg" />
+                        <text>
+                            java
+                        </text>
+                    </div>
+                    <div class="indeximg">
+                        <image src="/image/b.jpg" />
+                        <text>
+                            Vue
+                        </text>
+                    </div>
+                    <div class="indeximg">
+                        <image src="/image/c.jpg" />
+                        <text>
+                            C++
+                        </text>
+                    </div>
                 </div>
             </list-item>
             <list-item>
                 <div>
-                <div><text>g</text></div>
-                <div><text>h</text></div>
-                <div><text>i</text></div>
+                    <div class="indeximg">
+                        <image src="/image/a.jpg" />
+                        <text>
+                            java
+                        </text>
+                    </div>
+                    <div class="indeximg">
+                        <image src="/image/b.jpg" />
+                        <text>
+                            Vue
+                        </text>
+                    </div>
+                    <div class="indeximg">
+                        <image src="/image/c.jpg" />
+                        <text>
+                            C++
+                        </text>
+                    </div>
+                </div>
+            </list-item>
+            <list-item>
+                <div>
+                    <div class="indeximg">
+                        <image src="/image/a.jpg" />
+                        <text>
+                            java
+                        </text>
+                    </div>
+                    <div class="indeximg">
+                        <image src="/image/b.jpg" />
+                        <text>
+                            Vue
+                        </text>
+                    </div>
+                    <div class="indeximg">
+                        <image src="/image/c.jpg" />
+                        <text>
+                            C++
+                        </text>
+                    </div>
+                </div>
+            </list-item>
+            <list-item>
+                <div>
+                    <div class="indeximg">
+                        <image src="/image/a.jpg" />
+                        <text>
+                            java
+                        </text>
+                    </div>
+                    <div class="indeximg">
+                        <image src="/image/b.jpg" />
+                        <text>
+                            Vue
+                        </text>
+                    </div>
+                    <div class="indeximg">
+                        <image src="/image/c.jpg" />
+                        <text>
+                            C++
+                        </text>
+                    </div>
                 </div>
             </list-item>
         </list>
+    </div>
+    <div id="tab-Bar">
+        <div class="NavBar">
+            <image src="/image/商店.png" />
+            <text>首页</text>
+        </div>
+        <div class="NavBar">
+            <image src="/image/购物车.png" />
+            <text>分类</text>
+        </div>
+        <div class="NavBar">
+            <image src="/image/待收货.png" />
+            <text>购物车</text>
+        </div>
+        <div class="NavBar">
+            <image src="/image/头像.png" />
+            <text>我的</text>
+        </div>
     </div>
 </div>
