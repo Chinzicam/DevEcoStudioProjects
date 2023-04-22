@@ -1,50 +1,71 @@
-#search_box{
-    height: 100px;
-    background-color: orange;
-    padding: 10px;
-}
-#search_box search{
-    background-color: #fff;
-}
-.RootCategory{
-    position: fixed;
-    background-color: orange;
-    width: 130px;
-    margin-top: 110px;
+@import '../../common/css/common.css';
 
+#search-box{
+    background-color: orange;
+    height: 120px;
+    align-items: center;
+    padding: 0 15px;
 }
-.RootCategory .in-active{
+#search-box search{
     background-color: #fff;
 }
-.RootCategory text{
-    margin:10px;
-    padding: 10px;
-    border-style: dashed;
-}
-.main{
-/*    background-color: gold;*/
-    left: 140px;
-    top: 110px;
-    width: 610px;
+.root-category{
+    background-color: orange;
     position: fixed;
+    width: 160px;
+    top: 120px;
+    left: 0;
 }
-.SubCategory{
-    background-color: greenyellow;
-    flex-wrap: wrap;
-    border-style: solid;
+.root-category list-item{
+    padding: 20px 0;
+    justify-content: center;
 }
-.item{
-    width: 33%;
+.root-category .in-active{
+    background-color: #fff;
+}
+.main-box{
+    position: fixed;
+    top: 130px;
+    left: 180px;
+    width: 570px;
+}
+.sub-category{
+    flex-wrap: wrap ;
+    border-bottom: 8px solid #efefef;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+.sub-category .item{
+    width: 33.33333%;
+    padding: 15px 0;
+}
+.sub-category .item text{
+    width: 100%;
+    text-align: center;
+}
+
+.goods-box{
+    width: 100%;
+    padding-top: 20px;
+}
+.goods-category{
+    width: 100%;
+    height: 400px;
+}
+.name{
+    padding-top: 20px;
+    font-size: 60px;
+}
+.price{
+    margin-top: 250px;
+    font-size: 40px;
+    color: red;
+}
+.goods-box text{
     padding-left: 20px;
-    margin-bottom: 30px;
 }
-.SubCategory text{
-    border-radius: 5px;
-    border-style: solid;
-/*    background-color: red;*/
-    margin-top: 10px;
-}
-.good_box{
-/*    background-color: sandybrown;*/
-/*    margin-top: 50px;*/
+.book-item{
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-buttom:20px;
 }

@@ -1,0 +1,25 @@
+<div class="container">
+    <dialog id="dialog" class="dialog-wrap">
+        <div class="dialog-content">
+            <div class="dialog-title">
+                <text>是否取消这个商品</text>
+            </div>
+            <div class="btn-box">
+                <button type="capsule" class="btn first">是</button>
+                <button type="capsule" class="btn second">否</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="loading-dialog" class="loading-dialog">
+        <div class="loading-dialog-content">
+            <image id="loading-image" src="../../image/loading.svg" />
+            <text class="loading-text">Loading...</text>
+        </div>
+    </dialog>
+
+    <button @click="showDialog"> 自定义弹窗</button>
+    <button @click="toast"> 提示框 </button>
+
+    <button @click="showLoading"> loading </button>
+</div>

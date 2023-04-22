@@ -17,6 +17,9 @@ export default {
             [{name:"Vue",img_path:"/image/a.jpg"},
                 {name:"java",img_path:"/image/b.jpg"},
                 {name:"php",img_path:"/image/c.jpg"},],
+            [{name:"Vue",img_path:"/image/a.jpg"},
+                {name:"java",img_path:"/image/b.jpg"},
+                {name:"php",img_path:"/image/c.jpg"},],
         ]
 
     },

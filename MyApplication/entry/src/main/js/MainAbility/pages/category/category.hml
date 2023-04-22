@@ -1,32 +1,40 @@
-<div style="flex-direction: column;">
-    <div id="search_box">
-        <search hint="请输入搜索内容" searchbutton="搜索"></search>
+<element src="../../components/hm_toolbar/hm_toolbar.hml" name="footer-toolbar"></element>
+<element src="../../components/hm_book_item/hm_book_item.hml" name="book-item"></element>
+<div class="flex-column">
+    <div id="search-box">
+        <search hint="请输入书名" searchbutton="搜索"></search>
     </div>
-    <div class="main_box">
-        <div class="RootCategory">
+
+    <div class="main-box">
+        <div class="root-category">
             <list>
-                    <list-item 
-                            onclick="changeRootCate($item.id)"
-                            class="{{ $item.id === InActiveId ? 'in-active' : ''}}"
-                            for="{{ rootCategories }}">
-                        <text>{{$item.cateName}}</text>
-                    </list-item>
+                <list-item
+                        onclick="changeRootCategory($item.id)"
+                        class="{{ $item.id === inActiveId ? 'in-active' : '' }}"
+                        for="{{ rootCategories }}"
+                        tid="id">
+                    <text>{{ $item.name }}</text>
+                </list-item>
             </list>
         </div>
-        <div class="main" style="flex-direction: column;">
-            <div class="SubCategory">
-<!--                <list>-->
-<!--                    <list-item for="{{ subCategories }}">-->
-<!--                        <text>{{$item.cateName}}</text>-->
-<!--                    </list-item>-->
-<!--                </list>-->
-                <div class="item" for="{{v in subCategories}}">
-                    <text>{{v.cateName}}</text>
+        <div class="main flex-column">
+            <div class="sub-category">
+                <div @click="changeSubCategory(v.id)" class="item" for="{{ v in subCategories }}" tid="id">
+                    <text>{{ v.name }}</text>
                 </div>
             </div>
-            <div class="good_box">
-                <text>商品区域</text>
+            <div class="goods-box">
+                <list>
+                    <list-item @click="toBookDetail(v.id)"
+                               for="{{ v in bookList }}" tid="id">
+                        <book-item
+                                image="{{ v.image }}"
+                                book-name="{{ v.name }}"
+                                price="{{ v.price }}"></book-item>
+                    </list-item>
+                </list>
             </div>
         </div>
     </div>
+    <footer-toolbar current-page="category"></footer-toolbar>
 </div>

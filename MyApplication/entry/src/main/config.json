@@ -51,7 +51,13 @@
         "pages": [
           "pages/index/index",
           "pages/login/login",
-          "pages/category/category"
+          "pages/category/category",
+          "pages/details/details",
+          "components/hm_toolbar/hm_toolbar",
+          "components/hm_shopping_goods/hm_shopping_goods",
+          "pages/shopping_cart/shopping_cart",
+          "pages/dialogs/dialogs",
+          "components/hm_book_item/hm_book_item"
         ],
         "name": ".MainAbility",
         "window": {

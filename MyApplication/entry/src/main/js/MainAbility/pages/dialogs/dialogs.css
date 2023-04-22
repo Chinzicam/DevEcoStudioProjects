@@ -1,0 +1,44 @@
+.dialog-wrap{
+    width: 80%;
+    margin-bottom: 50%;
+}
+
+.dialog-content{
+    flex-direction: column;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.dialog-title {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.btn-box{
+    width: 80%;
+    justify-content: space-between;
+}
+.btn-box .btn{
+    flex-grow: 1;
+}
+.btn-box .first{
+    margin-right: 30px;
+}
+
+
+
+.loading-dialog{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50%;
+}
+.loading-dialog-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#loading-image{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}

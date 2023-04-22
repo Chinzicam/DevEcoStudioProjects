@@ -12,5 +12,11 @@
       "name": "MainAbility_label",
       "value": "label"
     }
-  ]
+  ,{
+      "name": "PageAbility_desc",
+      "value": "description"
+    },{
+      "name": "PageAbility_label",
+      "value": "label"
+    }]
 }

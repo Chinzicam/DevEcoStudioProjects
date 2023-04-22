@@ -1,0 +1,27 @@
+.book-item{
+    height: 200px;
+}
+.image-box{
+    width: 30%;
+}
+.info-box{
+    margin-left: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.price-box{
+    color: pink;
+}
+.rmb{
+    font-box:20px;
+}
+.price{
+    font-size: 38px;
+    font-weight: 700;
+}
+.book-name{
+    line-height: 35px;
+    height: 70px;
+    overflow: hidden ;
+}

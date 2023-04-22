@@ -1,3 +1,4 @@
+<element src="../../components/hm_toolbar/hm_toolbar.hml" name="hm-toolbar"></element>
 <div style="flex-direction: column; margin: 50px;">
     <div class="title">
         <text>
@@ -17,4 +18,5 @@
         <text>遇见问题</text>
         <text>隐私声明</text>
     </div>
+    <hm-toolbar current-page="login"></hm-toolbar>
 </div>
