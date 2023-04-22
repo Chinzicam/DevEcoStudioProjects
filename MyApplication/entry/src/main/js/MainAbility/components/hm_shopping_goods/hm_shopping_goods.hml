@@ -1,0 +1,25 @@
+<div class="goods-item">
+    <div class="checkbox-box">
+        <input type="checkbox" @change="changeChecked" checked="{{checked}}" />
+    </div>
+    <div class="image-box">
+        <image src="{{image}}"/>
+    </div>
+    <div class="info-box">
+        <div class="good-name">
+            <text>{{name}}</text>
+        </div>
+        <div class="detail-box">
+            <div class="price-box">
+                <text class="rmb">￥</text>
+                <text class="{{newPrice}}">17</text>
+                <text class="{{oldPrice}}">￥23</text>
+            </div>
+            <div class="num-box">
+                <text @click="dec" class="btn btn-dec">-</text>
+                <input class="input-num" type="number" value="{{buynum}}"/>
+                <text @click="inc" class="btn btn-inc">+</text>
+            </div>
+        </div>
+    </div>
+</div>

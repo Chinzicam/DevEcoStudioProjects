@@ -1,0 +1,35 @@
+/*@import '../../common/css/common.css';*/
+.page{
+    background-color: #efefef;
+}
+.list{
+    padding: 0 20px;
+}
+.list-item{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px 20px 20px 0;
+    border-radius: 20px;
+}
+.tool-box{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 110px;
+    background-color: #fff;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+}
+.tool-box button{
+    font-size: 33px;
+    padding: 10px 20px;
+    background-color: brown;
+}
+.tool-box .rmb , .tool-box .total-price{
+    color: red;
+}
+.total-price{
+    font-size: 36px;
+    font-weight: 700;
+}

@@ -1,0 +1,34 @@
+<element src="../../components/hm_shopping_goods/hm_shopping_goods.hml" name="shop-good"></element>
+<element src="../../components/hm_toolbar/hm_toolbar.hml" name="hm-toolbar"></element>
+<div class="page">
+    <div class="flex-column">
+        <list class="list">
+            <list-item class="list-item" for="v in goods">
+                <shop-good
+                        goods-id="{{v.id}}"
+                        checked="{{v.checked}}"
+                        image="{{v.image}}"
+                        name="{{v.name}}"
+                        new-price="{{v.newPrice}}"
+                        old-price="{{v.oldPrice}}"
+                        num="{{v.num}}"
+                        @change-num="changeNum"
+                        @change-checked="changeChecked"
+                        @change-inc="changeInc"
+                        ></shop-good>
+            </list-item>
+        </list>
+    </div>
+    <div class="tool-box">
+        <div class="select-all-box">
+            <input @change="selectAll" type="checkbox"/>全选
+            <text>合计：</text>
+            <text>
+                <span class="rmb">￥</span>
+                <span class="total-price">{{totalPrice}}</span>
+            </text>
+        </div>
+        <button>去结算</button>
+    </div>
+    <hm-toolbar current-page="cart"></hm-toolbar>
+</div>

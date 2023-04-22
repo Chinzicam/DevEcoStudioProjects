@@ -1,0 +1,26 @@
+<div class="container">
+      <div class="product-image">
+          <image src="/image/a.jpg" />
+      </div>
+      <div class="product-info">
+<!--                      <div class="introduce_area">-->
+<!--                          <text class="introduce_title">-->
+<!--                              {{ shop_introduce[0].title }}-->
+<!--                          </text>-->
+<!--                          <text class="introduce_price">-->
+<!--                              ￥{{shop_introduce[1].price}}-->
+<!--                          </text>-->
+<!--                          <text class="introduce_describe">-->
+<!--                              {{shop_introduce[2].describe}}-->
+<!--                          </text>-->
+<!--                      </div>-->
+      </div>
+    <div class="product-image_bom">
+        <image src="/image/aa.png" />
+    </div>
+    <div class="tab-Bar">
+        <image style="width: 100px;height: 100px;" src="/image/购物车.png" />
+        <button>加入购物车</button>
+        <button>立即购买</button>
+    </div>
+</div>

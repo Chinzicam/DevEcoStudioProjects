@@ -1,3 +1,4 @@
+<element src="../../components/hm_toolbar/hm_toolbar.hml" name="hm-toolbar"></element>
 <div style="flex-direction: column;">
     <div id="search_box">
         <search hint="请输入搜索内容" searchbutton="搜索"></search>
@@ -24,9 +25,25 @@
                     <text>{{v.cateName}}</text>
                 </div>
             </div>
+
             <div class="good_box">
-                <text>商品区域</text>
+                <list >
+                    <list-item for="{{shop_introduce}}" tid="id"  >
+                        <div for="{{$item}}" tid="id">
+                            <image class="index_img" src="{{$item.img_path}}" />
+                            <div class="introduce_area">
+                                <text class="introduce_title">
+                                    {{ $item.title }}
+                                </text>
+                                <text class="introduce_price">
+                                    ￥{{$item.price}}
+                                </text>
+                            </div>
+                        </div>
+                    </list-item>
+                </list>
             </div>
         </div>
     </div>
+    <hm-toolbar current-page="category"></hm-toolbar>
 </div>

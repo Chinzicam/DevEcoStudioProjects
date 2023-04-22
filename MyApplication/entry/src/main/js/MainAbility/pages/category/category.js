@@ -1,4 +1,5 @@
 import categories from '../../common/js/categories';
+import shop_introduce from '../../common/js/shop_introduce';
 //console.log(categories);
 export default {
     data: {
@@ -6,6 +7,7 @@ export default {
         rootCategories:[],
         subCategories:[],
         InActiveId:0,
+        shop_introduce:shop_introduce,
     },
     onInit() {
         this.rootCategories=this.getRootCategory(0);

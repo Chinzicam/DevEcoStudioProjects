@@ -1,0 +1,64 @@
+.goods-item{
+    width: 100%;
+    height: 200px;
+    align-items: center;
+}
+.checkbox-box{
+    width: 10%;
+}
+.image-box{
+    width: 20%;
+}
+.info-box{
+    margin-left: 3%;
+    width: 67%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.good-name{
+    padding-top: 10px;
+}
+.detail-box{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.input-num{
+    width: 50px;
+    height: 45px;
+    padding: 0px;
+    font-size: 26px;
+    font-weight: 700;
+    padding-left: 15px;
+    border-radius: 0;
+}
+.num-box .btn{
+    padding: 0px 25px;
+    border:1px solid #ccc;
+    color: #000;
+    font-weight: 700;
+}
+.price-box .rmb,.price-box .new-price{
+    color: red;
+}
+.price-box .rmb,.price-box .old-price{
+    font-size: 24;
+}
+.price-box .old-price{
+    color: #aaa;
+    text-decoration:line-through;
+
+}
+.price-box .new-price{
+    font-weight: 700;
+    font-size: 36px;
+}
+.num-box .btn-dec{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.num-box .btn-inc{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}

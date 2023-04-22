@@ -1,0 +1,7 @@
+#footer-tool-bar{
+    position: fixed;
+    bottom: 0;
+}
+.in-active{
+    color: deepskyblue;
+}

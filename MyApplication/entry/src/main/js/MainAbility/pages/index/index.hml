@@ -1,3 +1,4 @@
+<element src="../../components/hm_toolbar/hm_toolbar.hml" name="hm-toolbar"></element>
 <div style="flex-direction: column; margin-bottom: 180px;">
     <div class="title">
         <text>
@@ -26,22 +27,5 @@
             </list-item>
         </list>
     </div>
-    <div id="tab-Bar">
-        <div class="NavBar">
-            <image src="/image/商店.png" />
-            <text>首页</text>
-        </div>
-        <div class="NavBar">
-            <image src="/image/购物车.png" />
-            <text>分类</text>
-        </div>
-        <div class="NavBar">
-            <image src="/image/待收货.png" />
-            <text>购物车</text>
-        </div>
-        <div class="NavBar">
-            <image src="/image/头像.png" />
-            <text>我的</text>
-        </div>
-    </div>
+    <hm-toolbar current-page="index"></hm-toolbar>
 </div>

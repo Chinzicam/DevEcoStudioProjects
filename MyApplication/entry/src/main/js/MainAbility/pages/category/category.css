@@ -29,7 +29,7 @@
     position: fixed;
 }
 .SubCategory{
-    background-color: greenyellow;
+    background-color: #ffc0c0c0;
     flex-wrap: wrap;
     border-style: solid;
 }
@@ -45,6 +45,27 @@
     margin-top: 10px;
 }
 .good_box{
-/*    background-color: sandybrown;*/
-/*    margin-top: 50px;*/
+    background-color: #ffb5ffaa;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.index_img{
+    height: 400px;
+    width:300px;
+}
+.introduce_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*    background-color: red;*/
+    width: 310px;
+}
+.introduce_title{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.introduce_price{
+    margin-top: 200px;
+    color: red;
+    font-size: 40px;
 }
