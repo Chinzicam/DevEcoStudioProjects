@@ -1,0 +1,6 @@
+<toolbar id="footer-tool-bar">
+    <block for="{{(k,v) in toolbar}}" tid="name">
+        <toolbar-item value="{{v.value}}" if="{{currentPage ===v.name}}" class="in-active" icon="/image/{{v.inActiveIcon}}"></toolbar-item>
+        <toolbar-item onclick="changePage(k)"  value="{{v.value}}" else icon="/image/{{v.icon}}"></toolbar-item>
+    </block>
+</toolbar>

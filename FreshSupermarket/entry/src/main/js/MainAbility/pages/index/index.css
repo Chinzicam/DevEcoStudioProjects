@@ -1,0 +1,42 @@
+@import '../../common/css/common.css';
+.flex-column{
+    background: linear-gradient(135deg, #f24c78,#fff);
+    width: 100%;
+    height: 100%;
+}
+#search-box{
+    height: 120px;
+    align-items: center;
+    padding: 0 10px;
+}
+#search-box search{
+    background-color: #fff;
+}
+.swiper_area{
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.index_img{
+    flex-direction: column;
+    width: 25%;
+    height: 180px;
+}
+.index_img text{
+    text-align: center;
+    font-size: 25px;
+}
+.more{
+    flex-direction: row;
+    align-items: center;
+}
+.goods_classify{
+    width: 100%;
+    height: 390px;
+}
+.more_classify{
+    height: 195px;
+}
+.more_classify index_img{
+    width: 20%;
+}

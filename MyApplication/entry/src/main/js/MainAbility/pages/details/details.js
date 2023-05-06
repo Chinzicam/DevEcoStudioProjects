@@ -9,9 +9,9 @@ export default {
         good: [],
         },
     onInit() {
-        let bookId = router.getParams()['bookId'];
+        let bookId = router.getParams()?.['bookId'];
         if(!bookId){
-            return router.back();//回到原来页面
+            return router.back()
         }
         this.bookId=bookId;
     },

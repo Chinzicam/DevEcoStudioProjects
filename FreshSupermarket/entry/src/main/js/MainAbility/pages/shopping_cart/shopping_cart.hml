@@ -1,0 +1,4 @@
+<element src="../../components/hm_toolbar/hm_toolbar.hml" name="hm-toolbar"></element>
+<div >
+    <hm-toolbar current-page="shopping_cart"></hm-toolbar>
+</div>

@@ -1,0 +1,41 @@
+<element src="../../components/hm_toolbar/hm_toolbar.hml" name="hm-toolbar"></element>
+<div class="flex-column">
+    <div id="search-box">
+        <search hint="半价日第二件半价" searchbutton="搜索"></search>
+    </div>
+    <div class="swiper_area">
+        <swiper autoplay="true">
+            <div><image src="{{image_swiper[0].path}}" /></div>
+            <div><image src="{{image_swiper[1].path}}" /></div>
+            <div><image src="{{image_swiper[2].path}}" /></div>
+        </swiper>
+    </div>
+    <div class="goods_classify">
+            <list >
+                <list-item for="{{good_classify}}" tid="id"  >
+                    <div class="index_img" for="{{$item}}" tid="id">
+                        <image src="{{$item.img_path}} "
+                               style="border-radius: 20px; padding: 15px;" />
+                        <text>
+                            {{ $item.name }}
+                        </text>
+                    </div>
+                </list-item>
+            </list>
+    </div>
+    <div class="more_classify">
+        <list class="more">>
+            <list-item for="{{more_classify}}" tid="id"  >
+                <div class="index_img" for="{{$item}}" tid="id">
+                    <image src="{{$item.img_path}} "
+                           style="border-radius: 20px; padding: 15px;" />
+                    <text>
+                        {{ $item.name }}
+                    </text>
+                </div>
+            </list-item>
+        </list>
+    </div>
+    <div></div>
+    <hm-toolbar current-page="index"></hm-toolbar>
+</div>
