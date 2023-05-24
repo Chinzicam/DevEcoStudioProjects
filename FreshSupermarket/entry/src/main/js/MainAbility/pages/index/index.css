@@ -2,7 +2,6 @@
 .flex-column{
     background: linear-gradient(135deg, #f24c78,#fff);
     width: 100%;
-    height: 100%;
 }
 #search-box{
     height: 120px;
@@ -14,17 +13,23 @@
 }
 .swiper_area{
     width: 100%;
-    height: 400px;
+    height: 250px;
     padding: 15px;
 }
 .index_img{
     flex-direction: column;
-    width: 25%;
+    width: 20%;
     height: 180px;
+    padding-bottom: 10px;
+/*    background-color: red;*/
 }
 .index_img text{
     text-align: center;
     font-size: 25px;
+}
+.img_radius{
+    border-radius: 20px;
+    padding: 15px;
 }
 .more{
     flex-direction: row;
@@ -32,11 +37,71 @@
 }
 .goods_classify{
     width: 100%;
-    height: 390px;
+    height: 370px;
+/*    background-color: red;*/
 }
 .more_classify{
     height: 195px;
+/*    background-color: lightblue;*/
 }
-.more_classify index_img{
-    width: 20%;
+.discount{
+    width: 100%;
+    height: 280px;
+/*    background-color: #ffe3e3e3;*/
+    flex-direction: column;
 }
+.discount_text{
+    width: 100%;
+    height: 40px;
+}
+.discount_good{
+    width: 100%;
+    height: 250px;
+}
+.a{
+    font-size: 35px;
+    margin-left: 10px;
+}
+.b{
+    margin-left: 20px;
+    padding: 5px;
+    background-color: rgb(247,79,43);
+    border-style: solid;
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+}
+.c{
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: white;
+    color: rgb(247,79,43);
+    border-radius: 20px;
+}
+.d{
+    padding-left: 180px;
+}
+.sell_img{
+    flex-direction: column;
+    width: 25%;
+/*    background-color: red;*/
+}
+.sell_img text{
+    font-size: 23px;
+}
+.price_box{
+    height: 50px;
+    flex-direction: row;
+    padding-left: 30%;
+}
+.price_box .new_price{
+    color:red;
+    padding-left: 0;
+    font-size: 30px;
+}
+.price_box .old_price{
+    color: #aaa;
+    padding-left: 0;
+    text-decoration:line-through;
+}
+

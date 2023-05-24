@@ -1,6 +1,14 @@
 #footer-tool-bar{
-    position: fixed;
-    bottom: 0;
+    position: fixed; /*固定定位*/
+    left:0;
+    bottom:0;
+    background-color: #fffcfcfc;
+    height: 100px;
+    width: 100%;
+/*交叉轴对齐：居中*/
+    align-items: center;
+/*主轴对齐：around*/
+    justify-content: space-around;
 }
 .in-active{
     color: #46BE64;

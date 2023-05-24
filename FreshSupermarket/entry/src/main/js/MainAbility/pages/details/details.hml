@@ -1,0 +1,39 @@
+<div class="container flex-column">
+    <text class="back" @click="back">
+        &lt;
+    </text>
+    <list style="height: 95%;">
+        <list-item>
+            <swiper autoplay="true" interval="2000">
+                <div for="{{ shopInfo.swiperImg }}">
+                    <image src="{{ $item }}"></image>
+                </div>
+            </swiper>
+        </list-item>
+        <list-item>
+            <div class="shop_intro">
+                <div>
+                    <text class="rmb">￥</text>
+                    <text class="price">{{ shopInfo.nowPrice }}</text>
+                </div>
+                <text class="title1">{{ shopInfo.title }}</text>
+                <text class="title2">{{ shopInfo.subTitle }}</text>
+            </div>
+        </list-item>
+        <list-item for="{{ shopInfo.description }}" tid="id">
+            <image src="{{ $item }}"/>
+        </list-item>
+    </list>
+    <div class="button-bar">
+        <div>
+            <text class="text">收藏</text>
+        </div>
+        <div>
+            <text class="text">购物车</text>
+        </div>
+        <div>
+            <button class="button">加入购物车</button>
+        </div>
+
+    </div>
+</div>

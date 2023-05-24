@@ -1,4 +1,47 @@
 <element src="../../components/hm_toolbar/hm_toolbar.hml" name="hm-toolbar"></element>
-<div >
+<element src="../../components/hm_shop_item/hm_shop_item.hml" name="shop_item"></element>
+<div class="flex-column">
+    <div class="top_area">
+    <div id="search-box">
+        <search hint="半价日第二件半价" searchbutton="搜索"></search>
+    </div>
+    <div class="one_menu">
+        <list class="row">
+            <list-item>
+                <div class="index_img" for="{{OneMenu}}" tid="id">
+                    <image src="{{$item.image}}"
+                           class="img_radius"/>
+                    <text class="menu_text">
+                        {{ $item.name }}
+                    </text>
+                </div>
+            </list-item>
+        </list>
+        <div class="expand">
+            <text>展开&#9660</text>
+        </div>
+    </div>
+    </div>
+    <div class="two_menu">
+        <list>
+            <list-item for="{{TwoMenu}}">
+                <div>
+                        <text>{{ $item.name}}</text>
+                </div>
+            </list-item>
+        </list>
+    </div>
+    <div class="right_area">
+        <div class="select">
+            <div class="select_item"><text>价格</text></div>
+            <div class="select_item" ><text>折扣</text></div>
+            <div class="select_item" ><text>筛选</text></div>
+        </div>
+        <shop_item></shop_item>
+        <shop_item></shop_item>
+        <shop_item></shop_item>
+        <shop_item></shop_item>
+        <shop_item></shop_item>
+    </div>
     <hm-toolbar current-page="category"></hm-toolbar>
 </div>

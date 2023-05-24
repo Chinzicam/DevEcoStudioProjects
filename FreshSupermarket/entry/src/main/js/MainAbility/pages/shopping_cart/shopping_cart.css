@@ -1,18 +1,50 @@
-.container {
-    display: flex;
+/*@import '../../common/css/common.css';*/
+.page{
+    background-color: #efefef;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
 }
-
-.title {
-    font-size: 38px;
-    text-align: center;
+.shop_title{
     width: 100%;
-    height: 40%;
-    margin: 10px;
+    height: 60px;
+/*    background-color: lightskyblue;*/
+    justify-content: space-around;
+}
+.shop_title .a{
+    width: 50%;
+}
+.shop_title .aa{
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 35px;
+}
+.list{
+    padding: 0 20px;
+}
+.list-item{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px 20px 20px 0;
+    border-radius: 20px;
+}
+.tool-box{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 110px;
+    background-color: #fff;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+}
+.tool-box button{
+    font-size: 33px;
+    padding: 10px 20px;
+    background-color: rgb(85,180,99);
+}
+.tool-box .rmb , .tool-box .total-price{
+    color: red;
+}
+.total-price{
+    font-size: 36px;
+    font-weight: 700;
 }

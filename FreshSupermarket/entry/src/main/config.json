@@ -53,7 +53,12 @@
           "pages/my/my",
           "pages/category/category",
           "pages/shopping_cart/shopping_cart",
-          "components/hm_toolbar/hm_toolbar"
+          "components/hm_toolbar/hm_toolbar",
+          "pages/login/login",
+          "components/hm_shopping_goods/hm_shopping_goods",
+          "pages/register/register",
+          "pages/details/details",
+          "components/hm_shop_item/hm_shop_item"
         ],
         "name": ".MainAbility",
         "window": {

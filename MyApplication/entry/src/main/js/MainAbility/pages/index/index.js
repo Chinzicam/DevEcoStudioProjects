@@ -25,5 +25,6 @@ export default {
     },
     onInit() {
         this.title = "Hello World";
+        console.log(this.shop_swiper[0])
     }
 }

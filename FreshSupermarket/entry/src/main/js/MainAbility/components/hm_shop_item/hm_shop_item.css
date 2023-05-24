@@ -1,0 +1,60 @@
+.shops-item{
+    width: 520px;
+    height: 300px;
+/*    background-color: lemonchiffon;*/
+}
+.mainImg{
+    width: 250px;
+    height: 100%;
+    padding: 20px 10px;
+}
+.right_area{
+    height: 100%;
+    width: 270px;
+    flex-direction: column;
+    padding: 20px 0;
+/*    background-color: lightblue;*/
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+/*    background-color: lightskyblue;*/
+}
+.subTitle{
+    font-size: 23px;
+    font-style: italic;
+}
+.specifications{
+    background-color: rgb(255,237,238);
+    color: rgb(252,23,33);
+    border-radius: 20px;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 5px;
+}
+.price_area{
+/*    background-color: #ffa5ecff;*/
+    align-items: flex-end;
+}
+.price-box .rmb,.price-box .new-price{
+    color: red;
+}
+.price-box .rmb,.price-box .old-price{
+    font-size: 24;
+}
+.price-box .old-price{
+    color: #aaa;
+    text-decoration:line-through;
+}
+.price-box .new-price{
+    font-weight: bold;
+    font-size: 36px;
+}
+.btn{
+    margin-left: 50px;
+    background-color: rgb(29,183,85);
+    font-size: 50px;
+    border-radius: 50px;
+    width: 50px;
+    padding-left: 10px;
+}

@@ -5,17 +5,26 @@
     </div>
     <div class="swiper_area">
         <swiper autoplay="true">
-            <div><image src="{{image_swiper[0].path}}" /></div>
-            <div><image src="{{image_swiper[1].path}}" /></div>
-            <div><image src="{{image_swiper[2].path}}" /></div>
+            <div><image src="{{image_swiper[0].imgSrc}}" /></div>
+            <div><image src="{{image_swiper[1].imgSrc}}" /></div>
+            <div><image src="{{image_swiper[2].imgSrc}}" /></div>
         </swiper>
     </div>
     <div class="goods_classify">
-            <list >
-                <list-item for="{{good_classify}}" tid="id"  >
-                    <div class="index_img" for="{{$item}}" tid="id">
-                        <image src="{{$item.img_path}} "
-                               style="border-radius: 20px; padding: 15px;" />
+            <list>
+                <list-item >
+                    <div class="index_img" for="{{good_classify1}}" tid="id">
+                        <image src="{{$item.image}} "
+                               class="img_radius" />
+                        <text>
+                            {{ $item.name }}
+                        </text>
+                    </div>
+                </list-item>
+                <list-item >
+                    <div class="index_img" for="{{good_classify2}}" tid="id">
+                        <image src="{{$item.image}} "
+                               class="img_radius" />
                         <text>
                             {{ $item.name }}
                         </text>
@@ -25,10 +34,10 @@
     </div>
     <div class="more_classify">
         <list class="more">>
-            <list-item for="{{more_classify}}" tid="id"  >
-                <div class="index_img" for="{{$item}}" tid="id">
-                    <image src="{{$item.img_path}} "
-                           style="border-radius: 20px; padding: 15px;" />
+            <list-item >
+                <div class="index_img" for="{{more_classify}}" tid="id">
+                    <image src="{{$item.image}} "
+                           class="img_radius" />
                     <text>
                         {{ $item.name }}
                     </text>
@@ -36,6 +45,52 @@
             </list-item>
         </list>
     </div>
-    <div></div>
+    <div class="discount">
+        <div class="discount_text">
+            <text class="a">限时抢购</text>
+            <text class="b">10点场</text>
+            <text class="c">01:35:40</text>
+            <text class="d">更多></text>
+        </div>
+        <div class="discount_good">
+            <list class="more">>
+                <list-item for="{{discount_goods}}" tid="id"  >
+                    <div class="sell_img" for="{{$item}}" tid="id">
+                        <image src="{{$item.img_path}} "
+                               class="img_radius" />
+                        <div class="price_box">
+                            <text class="new_price">￥{{ $item.price_new }}</text>
+                        </div>
+                        <div class="price_box">
+                            <text class="old_price">￥{{ $item.price_old }}</text>
+                        </div>
+
+                    </div>
+                </list-item>
+            </list>
+        </div>
+    </div>
+    <div class="discount">
+        <div class="discount_text">
+            <text class="a">亿元补贴</text>
+            <text class="b">今日有半价</text>
+        </div>
+        <div class="discount_good">
+            <list class="more">>
+                <list-item for="{{discount_goods}}" tid="id"  >
+                    <div class="sell_img" for="{{$item}}" tid="id">
+                        <image src="{{$item.img_path}} "
+                               class="img_radius" />
+                        <div class="price_box">
+                            <text class="new_price">￥{{ $item.price_new }}</text>
+                        </div>
+                        <div class="price_box">
+                            <text class="old_price">￥{{ $item.price_old }}</text>
+                        </div>
+                    </div>
+                </list-item>
+            </list>
+        </div>
+    </div>
     <hm-toolbar current-page="index"></hm-toolbar>
 </div>

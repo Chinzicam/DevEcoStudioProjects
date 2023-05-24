@@ -11,9 +11,6 @@
 
     <div class="button">
         <div class="item flex-column">
-
-
-
             <text class="text">购物车</text>
         </div>
         <button class="button1">加入购物车</button>
