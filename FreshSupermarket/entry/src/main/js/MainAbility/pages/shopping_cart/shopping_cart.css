@@ -1,4 +1,4 @@
-/*@import '../../common/css/common.css';*/
+@import '../../common/css/common.css';
 .page{
     background-color: #efefef;
     flex-direction: column;

@@ -1,7 +1,7 @@
 import goods from '../../common/js/good_carts';
 export default {
     data: {
-        goods:goods,
+        goods:[],
     },
     computed:{
         totalPrice(){

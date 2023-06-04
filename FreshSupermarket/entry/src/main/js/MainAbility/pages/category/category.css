@@ -39,7 +39,7 @@
     margin-left: 15px;
 }
 .two_menu{
-    background-color: rgb(246,246,246);
+    background-color: rgba(238, 238, 238, 1.00);
     position: fixed;
     width: 200px;
     top: 270px;

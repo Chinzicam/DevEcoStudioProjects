@@ -1,6 +1,6 @@
 <element src="../../components/hm_shopping_goods/hm_shopping_goods.hml" name="shop-good"></element>
 <element src="../../components/hm_toolbar/hm_toolbar.hml" name="hm-toolbar"></element>
-<div class="page flex-column">
+<div class="flex-column">
     <div class="shop_title">
         <div class="a">
             <text class="aa">购物车</text>
@@ -9,21 +9,23 @@
         <text>清空</text>
     </div>
     <div class="flex-column">
-        <list class="list">
-            <list-item class="list-item" for="v in goods">
-                <shop-good
-                        goods-id="{{v.id}}"
-                        checked="{{v.checked}}"
-                        image="{{v.image}}"
-                        name="{{v.name}}"
-                        new-price="{{v.newPrice}}"
-                        num="{{v.num}}"
-                        @change-num="changeNum"
-                        @change-checked="changeChecked"
-                        @change-inc="changeInc"
-                        ></shop-good>
-            </list-item>
-        </list>
+<!--        <list class="list">-->
+<!--            <list-item class="list-item" for="v in goods">-->
+<!--                <shop-good-->
+<!--                        goods-id="{{v.id}}"-->
+<!--                        checked="{{v.checked}}"-->
+<!--                        image="{{v.image}}"-->
+<!--                        name="{{v.name}}"-->
+<!--                        new-price="{{v.newPrice}}"-->
+<!--                        num="{{v.num}}"-->
+<!--                        @change-num="changeNum"-->
+<!--                        @change-checked="changeChecked"-->
+<!--                        @change-inc="changeInc"-->
+<!--                        ></shop-good>-->
+<!--            </list-item>-->
+<!--        </list>-->
+        <shop-good></shop-good>
+        <shop-good></shop-good>
     </div>
     <div class="tool-box">
         <div class="select-all-box">

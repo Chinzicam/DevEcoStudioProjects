@@ -9,20 +9,19 @@
         <div class="subTitle">
             <text>{{subTitle}}</text>
         </div>
-        <div class="specifications">
-            <text>{{specifications}}</text>
-        </div>
+<!--        <div class="specifications">-->
+<!--            <text>{{specifications}}</text>-->
+<!--        </div>-->
         <div class="price_area">
             <div class="price-box">
                 <text class="rmb">￥</text>
                 <text class="new-price">{{newPrice}}</text>
-                <text class="old-price">￥{{oldPrice}}</text>
+                <text if="{{oldPrice}}" class="old-price">￥{{oldPrice}}</text>
             </div>
             <div class="btn">
                 <text>+</text>
             </div>
         </div>
-        
     </div>
 
 </div>

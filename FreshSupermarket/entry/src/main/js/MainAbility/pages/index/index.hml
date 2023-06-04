@@ -12,8 +12,11 @@
     </div>
     <div class="goods_classify">
             <list>
-                <list-item >
-                    <div class="index_img" for="{{good_classify1}}" tid="id">
+                <list-item>
+                    <div class="index_img"
+                         for="{{good_classify1}}"
+                         @click="toShopCategory($item.id)"
+                         tid="id">
                         <image src="{{$item.image}} "
                                class="img_radius" />
                         <text>
@@ -22,7 +25,10 @@
                     </div>
                 </list-item>
                 <list-item >
-                    <div class="index_img" for="{{good_classify2}}" tid="id">
+                    <div class="index_img"
+                         for="{{good_classify2}}"
+                         @click="toShopCategory($item.id)"
+                         tid="id">
                         <image src="{{$item.image}} "
                                class="img_radius" />
                         <text>
@@ -35,7 +41,10 @@
     <div class="more_classify">
         <list class="more">>
             <list-item >
-                <div class="index_img" for="{{more_classify}}" tid="id">
+                <div class="index_img"
+                     for="{{more_classify}}"
+                     @click="toShopCategory($item.id)"
+                     tid="id">
                     <image src="{{$item.image}} "
                            class="img_radius" />
                     <text>

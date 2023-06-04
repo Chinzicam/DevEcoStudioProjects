@@ -41,6 +41,12 @@ export default {
             }
         })
     },
+    toShopCategory(typeId){
+        router.push({
+            url:'pages/category/category',
+            params:{typeId}
+        })
+    }
 }
 
 

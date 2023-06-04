@@ -1,10 +1,10 @@
 export default {
     props:{
         goodsId:{default:0},
-        name:{default:'Python数据结构和算法实战'},
-        image:{default:'/common/image/1.png'},
+        name:{default:"洁柔粉Face百花香味纸面巾"},
+        image:{default:"https://imgs.pupuapi.com/STORE_PRODUCT/2ca0b573c8a54977b23ba981063add56/1640594534879.gif"},
         newPrice:{default:10},
-        num:{default:20},
+        num:{default:10},
         checked:{default:true}
     },
     data: {

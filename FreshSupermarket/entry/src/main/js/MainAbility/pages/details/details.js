@@ -10,11 +10,14 @@ export default {
     },
     getShopInfo(){
         ajax.get({
-            url:'http://124.71.79.186:8081/commodity/findGoods?goodsId=1',
+            url:'http://124.71.79.186:8081/commodity/findGoods?goodsId='+this.goodsId,
             success:resp=>{
                 this.shopInfo=resp.data
                 console.log(JSON.stringify(this.shopInfo))
             }
         })
+    },
+    back(){
+        router.back();
     },
 }

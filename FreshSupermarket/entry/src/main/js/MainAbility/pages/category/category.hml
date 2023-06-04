@@ -8,7 +8,10 @@
     <div class="one_menu">
         <list class="row">
             <list-item>
-                <div class="index_img" for="{{OneMenu}}" tid="id">
+                <div
+                        onclick="changeOneCategory($item.id)"
+                        class="index_img"
+                        for="{{OneMenu}}" tid="id">
                     <image src="{{$item.image}}"
                            class="img_radius"/>
                     <text class="menu_text">
@@ -24,8 +27,13 @@
     </div>
     <div class="two_menu">
         <list>
-            <list-item for="{{TwoMenu}}">
+            <list-item
+                    @click="changeTwoCategory($item.id)"
+                    class="{{ $item.id === inActiveId2 ? 'in-active' : '' }}"
+                    for="{{TwoMenu}}" tid="id">
                 <div>
+                        <image src="{{$item.image}}"
+                                style="width: 20%;"></image>
                         <text>{{ $item.name}}</text>
                 </div>
             </list-item>
@@ -37,11 +45,19 @@
             <div class="select_item" ><text>折扣</text></div>
             <div class="select_item" ><text>筛选</text></div>
         </div>
-        <shop_item></shop_item>
-        <shop_item></shop_item>
-        <shop_item></shop_item>
-        <shop_item></shop_item>
-        <shop_item></shop_item>
+        <list>
+                <list-item
+                        @click="toShopDetail(v.id)"
+                        for="{{ v in shopList }}" tid="id">
+                    <shop_item
+                            main-img="{{ v.mainImg }}"
+                            title="{{ v.title }}"
+                            sub-title="{{ v.subTitle }}"
+                            new-price="{{ v.nowPrice }}"
+                            old-price="{{ v.oldPrice }}"
+                            ></shop_item>
+                </list-item>
+        </list>
     </div>
     <hm-toolbar current-page="category"></hm-toolbar>
 </div>
