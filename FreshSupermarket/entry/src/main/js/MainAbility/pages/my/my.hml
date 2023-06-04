@@ -1,13 +1,21 @@
 <element src="../../components/hm_toolbar/hm_toolbar.hml" name="hm-toolbar"></element>
 <div class="flex-column">
-    <div class="person">
-        <text>个人中心</text>
+    <div class="person_area">
+        <text class="person">个人中心</text>
     </div>
-    <div class="name">
-        <text>{{username}}</text>
+    <div class="my_area">
+        <div if="{{username}}" style="flex-direction: column;">
+            <div style="justify-content: center;">
+                <text class="name">{{username}}</text>
+            </div>
+            <div>
+                <button @click="exit">退出登录</button>
+            </div>
+        </div>
+        <div if="{{!username}}" style="flex-direction: column;">
+            <button @click="toLoginPage">注册/登录</button>
+        </div>
     </div>
-    <div class="status">
-        <text>{{status[0].text1}}</text>
-    </div>
+    
     <hm-toolbar current-page="my"></hm-toolbar>
 </div>

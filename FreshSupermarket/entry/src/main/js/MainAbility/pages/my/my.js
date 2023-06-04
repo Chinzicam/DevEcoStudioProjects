@@ -1,12 +1,27 @@
+import router from '@ohos.router';
+import storage from '../../common/js/storage';
 export default {
     data: {
-        username:"czc",
-        status:[
-            {text1:"退出登录"},
-            {text1:"注册/登录"},
-        ]
+        username:"",
     },
     onInit() {
-        this.title = "Hello World";
-    }
+        storage(s=>{
+            let username = s.getSync("username",'');
+            this.username = username;
+        })
+    },
+
+    exit(){
+        this.username = '';
+        storage(s=>{
+            s.removeSync("username");
+            s.flushSync();
+        })
+    },
+    toLoginPage(){
+        router.push({
+            url:'pages/login/login',
+            params:{}
+        })
+    },
 }

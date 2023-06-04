@@ -1,5 +1,7 @@
 import ajax from '../../common/js/ajax';
 import router from '@ohos.router'
+import data_storage from '@ohos.data.storage';
+import featureAbility from '@ohos.ability.featureAbility';
 export default {
     data: {
         shopInfo:[],
@@ -19,5 +21,17 @@ export default {
     },
     back(){
         router.back();
+    },
+    addShop(){
+        var context = featureAbility.getContext();
+        context.getFilesDir().then((filePath) => {
+            let storage = data_storage.getStorageSync(filePath + '/mystore')
+            storage.putSync("goods", "shopInfo")
+            storage.flushSync()
+
+
+            let value = storage.getSync("goods","默认值")
+            console.info("The value of startup is " + value)
+        });
     },
 }

@@ -7,10 +7,10 @@
     <div style=" flex-direction: column;">
         <input type="text" placeholder="手机号码"></input>
         <input type="password" placeholder="密码"></input>
-        <button type="capsule">注册</button>
+        <button type="capsule" @click="toLoginPage">注册</button>
     </div>
     <div class="have">
-        <text>已有账号去登录</text>
+        <text @click="toLoginPage">已有账号去登录</text>
     </div>
     <div class="question">
         <text>遇见问题</text>

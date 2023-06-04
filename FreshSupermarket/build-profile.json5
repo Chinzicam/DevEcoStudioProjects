@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\czc\\.ohos\\config\\auto_debug_FreshSupermarket_com.example.freshsupermarket_30086000668910097.cer",
+          "storePassword": "0000001B274BB384A9447A46078F9C4EE7961231279F5371EAE2E1BF882EE82314DA1CD728FEE2958807BA",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B242789D6F19A3D09683BD25FD665E09B0D2E25832899A219C42C348EDAFF4E104E42F75E173617",
+          "profile": "C:\\Users\\czc\\.ohos\\config\\auto_debug_FreshSupermarket_com.example.freshsupermarket_30086000668910097.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\czc\\.ohos\\config\\auto_debug_FreshSupermarket_com.example.freshsupermarket_30086000668910097.p12"
+        }
+      }
+    ],
     "compileSdkVersion": 8,
     "compatibleSdkVersion": 8,
     "products": [

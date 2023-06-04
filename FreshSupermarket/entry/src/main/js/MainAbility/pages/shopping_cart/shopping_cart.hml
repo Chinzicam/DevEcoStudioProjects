@@ -9,23 +9,22 @@
         <text>清空</text>
     </div>
     <div class="flex-column">
-<!--        <list class="list">-->
-<!--            <list-item class="list-item" for="v in goods">-->
-<!--                <shop-good-->
-<!--                        goods-id="{{v.id}}"-->
-<!--                        checked="{{v.checked}}"-->
-<!--                        image="{{v.image}}"-->
-<!--                        name="{{v.name}}"-->
-<!--                        new-price="{{v.newPrice}}"-->
-<!--                        num="{{v.num}}"-->
-<!--                        @change-num="changeNum"-->
-<!--                        @change-checked="changeChecked"-->
-<!--                        @change-inc="changeInc"-->
-<!--                        ></shop-good>-->
-<!--            </list-item>-->
-<!--        </list>-->
-        <shop-good></shop-good>
-        <shop-good></shop-good>
+        <list class="list">
+            <list-item class="list-item" for="v in goods">
+                <shop-good
+                        goods-id="{{v.id}}"
+                        checked="{{v.checked}}"
+                        image="{{v.mainImg}}"
+                        name="{{v.title}}"
+                        new-price="{{v.nowPrice}}"
+                        num="{{v.num}}"
+                        @change-num="changeNum"
+                        @change-checked="changeChecked"
+                        @change-inc="changeInc"
+                        ></shop-good>
+            </list-item>
+        </list>
+<!--        <shop-good></shop-good>-->
     </div>
     <div class="tool-box">
         <div class="select-all-box">
