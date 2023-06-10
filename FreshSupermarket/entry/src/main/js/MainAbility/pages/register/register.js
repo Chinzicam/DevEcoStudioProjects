@@ -42,7 +42,7 @@ export default {
                         prompt.showToast({
                             message:"注册成功"
                         })
-                        console.log("qwer11111注册成功")
+                        console.log("qwer注册成功")
                         router.push({
                             url:'pages/login/login',
                             params:{}
