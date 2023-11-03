@@ -1,5 +1,4 @@
  `注意：本项目接口是我老师那边提供的，课程结束后该接口已关闭，想要重现效果可以参考单机版 MyApplication/entry/src/main/js/MainAbility/common/js的js文件`
- `注意：本项目是我老师那边提供的，课程结束后该接口已关闭，想要重现效果可以参考单机版 MyApplication/entry/src/main/js/MainAbility/common/js的js文件`
 
 # 生鲜超市
 
