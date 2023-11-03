@@ -1,4 +1,5 @@
- 
+ `注意：本项目接口是我老师那边提供的，课程结束后该接口已关闭，想要重现效果可以参考单机版 MyApplication/entry/src/main/js/MainAbility/common/js的js文件`
+ `注意：本项目是我老师那边提供的，课程结束后该接口已关闭，想要重现效果可以参考单机版 MyApplication/entry/src/main/js/MainAbility/common/js的js文件`
 
 # 生鲜超市
 
@@ -38,7 +39,9 @@
 
 ### 3.1 首页
 
-顶部搜索栏，使用了组件显示，轮播图和商品分类，更多分类是调用http://124.71.79.186:8081/menu/findNav接口获取，通过list，for循环得到，限时抢购以及亿元补贴是静态数据
+顶部搜索栏，使用了组件显示，轮播图和商品分类，更多分类是调用http://124.71.79.186:8081/menu/findNav 接口获取，通过list，for循环得到，限时抢购以及亿元补贴是静态数据
+
+`注意：该接口是我老师那边提供的，课程结束后该接口已关闭，想要重现效果可以参考单机版 MyApplication/entry/src/main/js/MainAbility/common/js的js文件`
 
 ![img](README.assets/clip_image008.jpg)
 
